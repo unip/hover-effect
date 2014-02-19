@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Maven Pro", sans-serif;
+	color: inherit;
+	border: none;
+	text-decoration: none;
+}
+
+html, body {height: 100%;}
+body {background-color: #73C883;}
+
+a:hover {border-bottom: 1px dotted}
+
+#container {
+	width: 660px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#container h1 {
+	font-family: Cambria, serif;
+	line-height: 80px;
+	text-align: center;
+	margin: 10px 0 15px;
+	padding-bottom: 10px;
+	color: white;
+	border-bottom: 1px solid #E13B23;
+}
+
+#container h1 img {top: 15px; position: relative;}
+#content a:hover {border: none;}
+
+ul.nav-menu {
+	width: 300px;
+	line-height: 50px;
+	margin: 0 auto;
+	list-style: none; 
+	text-align: center;
+	overflow: hidden;
+}
+
+ul.nav-menu li {
+	width: 100px;
+	float: left;
+}
+
+ul.nav-menu li a:hover, ul.nav-menu li.active a:hover {color: #54915F;}
+ul.nav-menu li.active a {color: white;}
+
+#footer {
+	color: #54915F;
+	font-size: 10pt;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+
+/* ----- TESTI CLASS -----*/
+
+ul.testi {
+	margin: 25px 0;
+	list-style: none;
+	width: inherit;
+	display: block;
+	overflow: hidden;
+}
+
+ul.testi li {
+	margin: 0 15px;
+	width: 200px;
+	height: 250px;
+	background-color: #E13B23;
+	float: left;
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+}
+
+ul.testi li:first-child {margin-left: 0;}
+ul.testi li:last-child {margin-right: 0;}
+ul.testi li img {float: left;}
+
+ul.testi li a {
+	height: 250px;
+	padding: 20px;
+	text-align: center;
+	font-size: 9pt;
+	color: white;
+	background-color: rgba(255,59,35,0.9);
+	display: block;
+	float: right;
+	position: absolute;
+	z-index: 2;
+}
+
+ul.testi li a span.id {
+	color: #731F12;
+	margin-top: 20px;
+	display: block;
+}
+
+
+/*---------- REVEAL EFFECT ----------//
+//-----------------------------------*/
+
+ul.testi-reveal li a {
+	opacity: 0;
+	transition: opacity 1s;
+	webkit-transition: opacity 1s;
+}
+ul.testi-reveal li:hover a {opacity: 1;}
+
+
+/* ---------- FLIP EFFECT ---------- //
+// --------------------------------- */
+
+ul.testi-flip li {
+	webkit-transform: rotateY(0deg);
+		ms-transform: rotateY(0deg);
+		   transform: rotateY(0deg);
+	transition-property: transform, opacity;
+	transition-duration: 1s;
+	webkit-transition-property: transform, opacity;
+	webkit-transition-duration: 1s;
+}
+
+ul.testi-flip li a {
+	opacity: 0;
+	webkit-transform: rotateY(180deg);
+		ms-transform: rotateY(180deg);
+		   transform: rotateY(180deg);
+	transition-property: opacity;
+	transition-duration: 1s;
+	webkit-transition-property: opacity;
+	webkit-transition-duration: 1s;
+}
+
+ul.testi-flip li:hover {
+	webkit-transform: rotateY(180deg);
+		ms-transform: rotateY(180deg);
+		   transform: rotateY(180deg);
+}
+
+ul.testi-flip li:hover a {
+	opacity: 1;
+}
+
+/* ---------- SLIDE EFFECT ----------- //
+// ----------------------------------- */
+
+ul.testi-slide li a {
+	top: 250px;
+	transition-property: top;
+	transition-duration: 0.5s;
+	webkit-transition-property: top;
+	webkit-transition-duration: 0.5s;
+}
+
+ul.testi-slide li:hover a {
+	top: 0;
+}
+
+/* ----- EASE CLASS ----- */
+
+.ease {
+	webkit-transition: all 0.5s ease;
+	    ms-transition: all 0.5s ease;
+		   transition: all 0.5s ease;
+}
