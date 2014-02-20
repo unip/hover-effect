@@ -122,6 +122,7 @@ ul.testi-reveal li:hover a {opacity: 1;}
 // --------------------------------- */
 
 ul.testi-flip {
+	overflow: visible;
 	-webkit-perspective: 500px;
 		perspective: 500px;
 }
