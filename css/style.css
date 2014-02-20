@@ -122,8 +122,8 @@ ul.testi-reveal li:hover a {opacity: 1;}
 // --------------------------------- */
 
 ul.testi-flip {
-	-webkit-prespective: 500px;
-		prespective: 500px;
+	-webkit-perspective: 500px;
+		perspective: 500px;
 }
 ul.testi-flip li {
 	-webkit-transform: rotateY(0deg);
