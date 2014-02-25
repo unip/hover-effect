@@ -15,9 +15,9 @@ So elements that you should use are:
 - Image `<img>`, and
 - Anchor `<a>`
 
-And current classes which can be applied are:
-- Reveal with class `reveal`
-- Flip with class `flip`
-- Slide with class `slide`
+Don't forget to put `.testi` class first to build the testimonial element then put one of class bellow:
+- Reveal with class `.testi-reveal`
+- Flip with class `.testi-flip`
+- Slide with class `.testi-slide`
 
 See how it works [here](http://unip.github.io/hover-effect) and don't forget to fork me.
