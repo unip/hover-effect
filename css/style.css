@@ -113,7 +113,7 @@ ul.testi li a span.id {
 ul.testi-reveal li a {
 	opacity: 0;
 	transition: opacity 1s;
-	webkit-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
 }
 ul.testi-reveal li:hover a {opacity: 1;}
 
@@ -121,30 +121,36 @@ ul.testi-reveal li:hover a {opacity: 1;}
 /* ---------- FLIP EFFECT ---------- //
 // --------------------------------- */
 
+ul.testi-flip {
+	height: 250px;
+	overflow: visible;
+	-webkit-perspective: 1000px;
+		perspective: 1000px;
+}
 ul.testi-flip li {
-	webkit-transform: rotateY(0deg);
-		ms-transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
 		   transform: rotateY(0deg);
 	transition-property: transform, opacity;
 	transition-duration: 1s;
-	webkit-transition-property: transform, opacity;
-	webkit-transition-duration: 1s;
+	-webkit-transition-property: transform, opacity;
+	-webkit-transition-duration: 1s;
 }
 
 ul.testi-flip li a {
 	opacity: 0;
-	webkit-transform: rotateY(180deg);
-		ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
 		   transform: rotateY(180deg);
 	transition-property: opacity;
 	transition-duration: 1s;
-	webkit-transition-property: opacity;
-	webkit-transition-duration: 1s;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 1s;
 }
 
 ul.testi-flip li:hover {
-	webkit-transform: rotateY(180deg);
-		ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
 		   transform: rotateY(180deg);
 }
 
@@ -159,8 +165,8 @@ ul.testi-slide li a {
 	top: 250px;
 	transition-property: top;
 	transition-duration: 0.5s;
-	webkit-transition-property: top;
-	webkit-transition-duration: 0.5s;
+	-webkit-transition-property: top;
+	-webkit-transition-duration: 0.5s;
 }
 
 ul.testi-slide li:hover a {
@@ -170,7 +176,7 @@ ul.testi-slide li:hover a {
 /* ----- EASE CLASS ----- */
 
 .ease {
-	webkit-transition: all 0.5s ease;
-	    ms-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	    -ms-transition: all 0.5s ease;
 		   transition: all 0.5s ease;
 }
