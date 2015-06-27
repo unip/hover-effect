@@ -1,14 +1,15 @@
 Hover Effect
 ============
 
-How a testimonial item act when hovered. Just apply the class to an unordered-list element which has structured element as follows:
+How a testimonial item/ thumbnail acts when hovered? Here some option for your purpose. Just apply the class to an unordered-list element which has structured element as follows:
 
-
-    <ul class="the-class-you-choose">
-      <li><img src="path/to/your/image/image.png"><a href="">An anchor element to write a short description.</a></li>
-      <li><img src="path/to/your/image/image.png"><a href="">An anchor element to write a short description.</a></li>
-      <li><img src="path/to/your/image/image.png"><a href="">An anchor element to write a short description.</a></li>
-    </ul>
+```html
+<ul class="the-class-you-choose">
+  <li><img src="path/to/your/image.png"><a href="">An anchor element to write a short description.</a></li>
+  <li><img src="path/to/your/image.png"><a href="">An anchor element to write a short description.</a></li>
+  <li><img src="path/to/your/image.png"><a href="">An anchor element to write a short description.</a></li>
+</ul>
+```
 
 So elements that you should use are:
 - Unordered-list `<ul>`
